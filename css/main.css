@@ -1,0 +1,112 @@
+html{
+    overflow-y: scroll;
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+body{
+    background:#454545;
+    line-height:1.7;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+    background-color: transparent;
+ /* 文字装饰 不要 */
+}
+
+a,body{
+color:#eee;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+.side-bar{
+    float:left;
+    /* 向左浮动 */
+    width: 15%;
+    /* 百分比 body的15% 灵活 */
+    position:fixed;
+       
+}
+.side-bar >*{
+padding:10px;
+text-align: center;
+
+}
+/* >*: side-bar下面所有的div */
+.side-bar .intro{
+    margin:5px;
+    font-size:13px;
+}
+
+.side-bar .nav a,
+.side-bar .tag-list a{
+    display:block;
+    padding:5px;
+    color:#888;
+    -webkit-transition: color 200ms;
+    -o-transition: color 200ms;
+    transition: color 200ms;
+}
+/* block 该对象随后的内容自动换行。 */
+.side-bar .nav a:hover,
+.side-bar .tag-list a:hover{
+    color:#eee;
+
+}
+/* hover 鼠标在元素上的特殊样式 */
+.side-bar .nav a{
+    font-weight:700;
+}
+/* 100-900 */
+.main {
+float:right;
+width:85%;
+color:#454545;
+
+}
+.main .article-list,.article{
+    margin-right:30%;
+    background:#fff;
+    padding:20px 30px 345px;
+    -webkit-box-shadow:0 0 3px rgba(0,0,0,.2);
+    box-shadow:0 0 3px 2px rgba(0,0,0,.2);
+}
+.main .article-list .item 
+{
+    margin-bottom:30px;
+}
+.main .article-list .item .title,
+.article .title{
+    color:#454545;
+    font-size:22px;
+    font-weight:700;
+   
+}
+.main .article-list .item .status,
+.main .article .status{
+    font-size:13px;
+    color:#ccc;
+   
+}
+.article-list .item>*,
+.main .article >*{
+    margin:10px 0px;
+}
+.header .logo{
+line-height:1;
+
+padding:10px 20px;
+font-size:30px;
+display:inline-block;
+
+}
+img{
+    display:block;
+    width:95%;
+    height:95%;
+    margin:20px auto auto auto;
+}
+
+
